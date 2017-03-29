@@ -1,0 +1,7 @@
+footer {
+	clear: both;
+	p{
+		text-align: center;
+		@include responsive-font(1vw, 10px, 16px);
+	}
+}

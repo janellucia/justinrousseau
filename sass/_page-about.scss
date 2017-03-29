@@ -1,0 +1,97 @@
+.about-text, .contact-container{
+	width: 80%;
+	padding: 10% 0;
+	min-height: 100vh;
+	.about_title{
+					text-align: center;
+					@include responsive-font(2vw, 14px, 28px);
+				}
+	p{
+		@include responsive-font(2vw, 14px, 28px);
+	}
+	.gform_wrapper{
+		form{
+			.gform_heading{
+				.gform_title{
+					text-align: center;
+					@include responsive-font(2vw, 14px, 28px);
+				}
+			}
+			.gform_body{
+				.gform_fields{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					flex-wrap: wrap;
+					li{
+						.gfield_label{
+							@include responsive-font(1vw, 10px, 16px);
+						}
+					}
+					.half{
+						width: 50%;
+						.ginput_container{
+							width: 100%;
+							input{
+								width: 100%;
+							}
+						}
+					}
+					.full{
+						width: 100%;
+					}
+				}
+			}
+			.gform_footer{
+				input[type=submit]{
+					width: 100%;
+					padding: 2%;
+					margin: 5% 0;
+				    color: $justinBlack;
+				    letter-spacing: 1px;
+				    text-transform: uppercase;
+				    font-family: 'Montserrat', sans-serif;
+				    background: $justinWhite;
+				    border: 1px solid $justinBlack;
+				    @include responsive-font(1vw, 8px, 22px);
+				}
+				input[type=submit]:focus{
+					background: $justinBlack;
+					color: white;
+					outline: none;
+				}
+			}
+		}
+	}
+}
+
+// All Media Queries
+
+// Landscape phones and tablet
+@media (max-width: 768px) {
+	// turn off wrapper margin 
+	.about-text, .contact-container{
+		width: 95%;
+		padding: 10% 0;
+		.gform_wrapper{
+		form{
+
+			.gform_body{
+				.gform_fields{
+					.half{
+						width: 100%;
+					}
+
+				}
+			}
+		}
+	}
+	}
+	
+    
+}
+ 
+// Landscape phones and down
+@media (max-width: 480px) {
+ 
+}

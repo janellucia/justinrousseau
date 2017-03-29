@@ -1,0 +1,36 @@
+
+
+.header{
+	width: 100%;
+	position: relative;
+	z-index: 99;
+	h1{
+		position: fixed;
+		top: 30px;
+		left: 30px;
+		@include responsive-font(2vw, 16px, 35px);
+		
+	}
+	h2{
+		position: fixed;
+		top: 30px;
+		right: 30px;
+		@include responsive-font(2vw, 16px, 35px);
+	}
+	.menu-container{
+		position: fixed;
+			bottom: 20px;
+			left: 30px;
+
+		.menu{
+			padding: 0;
+			justify-content: center;
+			align-items: center;
+			li{
+				list-style: none;
+				@include responsive-font(1.5vw, 14px, 24px);
+			}
+			
+		}
+	}
+}

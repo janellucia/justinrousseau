@@ -1,0 +1,91 @@
+/*!
+* Theme Name: Justin Rousseau WP Theme
+* Theme URI: http://justinrousseauhair.com;
+* Description: Justin Rousseau Wordpress Theme
+* Version: 1.0
+* Author: Janel Lucia
+* Author URI: http://janellucia.com
+*/
+
+@import 'normalize';
+@import 'responsiveFont';
+@import 'variables';
+@import 'typography';
+
+@import 'header';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+@import 'front-page';
+@import 'page-about';
+/*
+====================================
+Default Styling
+====================================
+*/
+@font-face {
+// font-family: 'UniversLight-Bold', sans-serif;
+font-family: 'Stetica';
+font-style: normal;
+font-weight: normal;
+// src: url('UniversLight-Bold.ttf') format('truetype');
+src: url('Stetica.woff') format('woff');
+}
+
+img {
+	max-width: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	// font-family: 'UniversLight-Bold', sans-serif;
+	font-family: 'Stetica';
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 80%;
+	float: right;
+}
+
+.content {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+
+.full {
+	width: 100%;
+}
+
+// All Media Queries
+
+// Landscape phones and tablet
+@media (max-width: 768px) {
+	// turn off wrapper margin 
+	.container{
+		width: 90%;
+	}
+	.content{
+		width: 100%;
+	}
+	
+    
+}
+ 
+// Landscape phones and down
+@media (max-width: 480px) {
+ 
+}
+
+
+
+
+
+
+
+
+

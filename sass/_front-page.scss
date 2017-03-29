@@ -1,0 +1,62 @@
+// Colour changing Background
+body{
+    width: 100%;
+    position: relative;
+    background-color: #FDD8E8;
+    animation-name: backG;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+// Chrome, Safari, Opera
+@-webkit-keyframes backG {
+    0%   {background-color: #FDD8E8;}
+    20%  {background-color: #B8E5E9;}
+    40%  {background-color: #E3FAC5;}
+    60% {background-color: #FFE2C8;}
+    80% {background-color: #FDE6F0;}
+    100%   {background-color: #FDD8E8;}
+    
+}
+
+// Standard syntax
+@keyframes backG {
+    0%   {background-color: #FDD8E8;}
+    20%  {background-color: #B8E5E9;}
+    40%  {background-color: #E3FAC5;}
+    60% {background-color: #FFE2C8;}
+    80% {background-color: #FDE6F0;}
+    100%   {background-color: #FDD8E8;}
+}
+
+
+
+   .grid{
+    padding: 5% 0;
+   }
+
+.main-footer{
+    width: 100%;
+    display: block;
+
+}
+.instagram{
+    width: 100%;
+    .widget-container{
+        list-style: none;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        p{
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            li{
+                width: 16.6%;
+                list-style: none;
+            }
+        }
+    }
+}
